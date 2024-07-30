@@ -1,0 +1,105 @@
+.item{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.list-itens{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    list-style-type: none;
+    margin: 0.5rem 0 0.5rem 0;
+    width: 60vh;
+    height: 3.4rem;
+    background: #ffffff34;
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 18px );
+    padding: 0.5rem 0 0.4rem 0;
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+}
+
+.icons-list{
+    width: 2rem;
+    padding: 0 0 0 0.5rem;
+}
+
+.item .list-itens input[type="checkbox"] {
+    display: none; /* Esconde o checkbox original */
+}
+
+.list-itens label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 65vh;
+    height: 3.4rem;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.item .list-itens label img {
+    margin-right: 10px;
+}
+
+.item .list-itens label h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Estilo para o label quando o checkbox está marcado */
+.item .list-itens input[type="checkbox"]:checked + label {
+    margin: 0.5rem 0 0.5rem -3rem;
+    width: 70vh;
+    height: 3.4rem;
+    box-shadow: 0 8px 32px 0 #1d2227cb;
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 18px );
+    border: 1px solid #ffffff8f;
+    padding: 0.5rem 1rem 0.4rem 0;
+    border-radius: 5rem;
+    background: #ff8c00c0;
+    transition: background-color 1s ease 0s;
+}
+
+.list-itens:hover{
+    width: 60vh;
+    border-radius: 5rem;
+    -webkit-animation: slide-left-fill-background 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: slide-left-fill-background 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left-fill-background {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+            border-radius: 5rem;
+    background-color: transparent;
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+            border-radius: 5rem;
+    background-color: #ff8c0071; 
+  }
+}
+
+@keyframes slide-left-fill-background {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+            border-radius: 5rem;
+    background-color: transparent;
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+            border-radius: 5rem;
+    background-color: #ff8c0091; 
+  }
+}
+
+
+
