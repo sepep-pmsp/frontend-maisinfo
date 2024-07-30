@@ -1,4 +1,4 @@
-export const ListMock = [
+[
     {
         "categories": [
           {
@@ -375,4 +375,4 @@ export const ListMock = [
         ]
       }
       
-];
+]
