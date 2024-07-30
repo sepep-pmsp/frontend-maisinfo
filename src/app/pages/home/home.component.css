@@ -1,0 +1,8 @@
+.home{
+    background-color: var(--primary-blue);
+    background-image: url(../../../assets/images/logo/info-escuro.png);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-attachment: fixed;
+    background-position: 30% 30%;
+}
